@@ -1,0 +1,35 @@
+html, body {
+  
+    height: 100%;
+    width: 100%;
+  }
+
+.cabeza {
+  display: block;
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding: 15px;
+  text-align: center;
+  background-color: solid #f029a9;
+  
+
+  }
+
+  .logo {
+    width: 30%;
+    border: 10px solid #f029a9;
+  }
+
+.car{
+    width: 80%;
+}
+
+.barra {
+  display: block;
+  width: 80%;
+}
+
+.prof {
+  color: #f77e14;
+}
