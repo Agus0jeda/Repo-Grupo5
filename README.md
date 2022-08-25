@@ -86,7 +86,7 @@
 </li>
 </p>
 
-Lo primero a tener en cuenta es crear una cuenta github. Para ello tendrá que instalar junto a los complementos necesarios siguiendo los pasos necesarios que se lo detallaremos a continuación: 
+Se podrá acceder a través de Heroku con una dirección web que se les será sedido junto con la página o blog creada.
 
 <ol>
     <li>.</li>
