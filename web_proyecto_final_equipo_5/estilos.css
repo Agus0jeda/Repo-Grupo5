@@ -33,3 +33,26 @@ html, body {
 .prof {
   color: #f77e14;
 }
+
+/*--------------------------------------------------------------
+# BLOG
+--------------------------------------------------------------*/
+
+
+.cabeza {
+  display: block;
+  width: 150px;
+  margin: 100px auto;
+  padding: 15px;
+  text-align: center;
+  border: 29px;
+
+  }
+
+.car{
+    width: 80%;
+}
+
+div.container {
+  margin-top: 20px;
+}
