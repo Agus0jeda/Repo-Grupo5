@@ -264,28 +264,71 @@ section {
 # CAMPANIAS
 --------------------------------------------------------------*/
 .campPiel {
-  background-color: #E6BF36;
+  background-color: #fbfbfb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.campPiel img {
+  width: 100%;
+  align-items: center;
+  align-content: center;
 }
 
 .campMamas {
-  background-color: #f1529a;
+  background-color: #fbfbfb;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .campPROS {
-  background-color: #10c5e0;
+  background-color: #fbfbfb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.campPROS img {
+  width: 100%;
+  align-items: center;
+  align-content: center;
 }
 
 .campUTER {
-  background-color: #ab20eb;
+  background-color: #fbfbfb;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .campPULMON {
-  background-color: #527af1;
+  background-color: #fbfbfb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.campPULMON img {
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+.campUTER img {
+  width: 100%;
+  align-items: center;
+  align-content: center;
 }
 
 .habitossaludables {
-  background-color: #0fed94;
+  background-color: #fbfbfb;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+.habitossaludables img {
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
 
 .content h2 {
   font-weight: 700;
