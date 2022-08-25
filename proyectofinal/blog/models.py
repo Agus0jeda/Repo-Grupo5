@@ -1,31 +1,27 @@
-from importlib.resources import contents
-from telnetlib import STATUS
-from turtle import title, update
+from distutils.command.upload import upload
+import email
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
-from django.contrib.auth.models import User
 
 # Create your models here.
-STATUS = (
-    (0,"Draft"),
-    (1,"Publish")
-)
+class Categoria (models.Model):
+    descripcion = models.CharField(max_length=255)
+
+    def __str__(self):
+        return f'Categoria {self.id}:{self.descripcion}'
+
+class Comentario (models.Model):
+    Nombre = models.CharField(max_length=255)
+    Comentario = models.CharField(max_length=255)
+    mail = models.EmailField
 
 class Post(models.Model):
-    title = models.CharField(max_length=300, unique=True)
-    slug = models.SlugField(max_length=300, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_posts')
-    contents = models.TextField()
-    status = models.IntegerField(choices=STATUS, default=0)
+    titulo = models.CharField(max_length=100)
+    subtitulo = models.CharField(max_length=255)
+    nota = models.TextField(max_length=5000)
+    imagen = models.ImageField(upload_to='photos')
+    fecha = models.DateField(auto_now_add=True)
+    categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True)
+    comentario = models.ForeignKey(Comentario, on_delete=models.SET_NULL, null=True)
 
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-    class Meta:
-        ordering = ['-created_at']
-    
-    def __str__(self):
-        return self.title
-    
-    
