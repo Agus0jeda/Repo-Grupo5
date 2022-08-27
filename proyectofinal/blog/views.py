@@ -10,5 +10,14 @@
 from django.shortcuts import render, HttpResponse
 
 # Create your views here.
-def mi_vista(request):
+def index(request):
     return render(request,"blog/index.html",{})
+
+
+def blog(request):
+    return render(request,"blog/blog.html",{})
+
+
+
+def noticias(request):
+    return render(request,"blog/noticias.html",{})
