@@ -82,7 +82,7 @@ DATABASES = {
         'PASSWORD':'2527Loco',
         'HOST':'127.0.0.1',
         'PORT':'5432',
-    }    #si aparece esta linea es porque esta mal editado el gitignore
+    }
 }
 
 
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-es'
 
-#TIME_ZONE = 'America/Argentina/Buenos-Aires'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
