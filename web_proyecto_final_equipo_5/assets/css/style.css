@@ -643,4 +643,10 @@ section {
 
 .integrantes ul a:hover {
   color: #0187a4;
+  list-style-position: inside;
+}
+
+.integrantes ul ul {
+  color: #0187a4;
+  list-style-position: inside;
 }
