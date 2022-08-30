@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="es">
+
+{% load static %}
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LALCEC</title>
+    <link href="{% static 'estilos.css' %}" rel="stylesheet" type="text/css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+
+    <!-- Favicons -->
+  <link href="{% static 'JPJp5\favicon.png' %}" rel="icon">
+  <link href="{% static 'JPJp5\liston.png' %}" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+   
+
+    <div class="container">
+    <!-- ======= BARRA DE REDES ======= -->
+        <div>
+            <header>
+                <section id="topbar" class="fixed-top d-flex align-items-center">
+                    <div class="container d-flex justify-content-center justify-content-md-between">
+                    <div class="contact-info d-flex align-items-center">
+                        <i class="bi bi-envelope d-flex align-items-center"><a href="lalcecspchaco@gmail.com">lalcecspchaco@gmail.com</a></i>
+                        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+5493644105595</span></i>
+                    </div>
+                    <div class="social-links d-none d-md-flex">
+                        <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>-->
+                        <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2FLALCECHACO%2F&e=ATPj6mQPpt4S2V3kZEH_Qo2AjTWyKBYQUlK1wZPvHA0uS0qaxAhA6gzFEtF8x5adJerqWP7W2WhNYgu3&s=1" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Flalcecspchaco%3Ffbclid%3DIwAR23xECAH5hX5gUXXHR-68HimkAsrC4O67OHxj0UGEFLadKOSSssT1484Ws&h=AT2aEnFT8JAuG76VOSuZewK88AeoHCVoVRljIEMP1P6TlbmIDnHqErZywxYXl15cyFyf2paxNw5RjDnWUE3NV1F-M0tW97cDuPTb06zScz8t8NnqGu_YHuXzGzF0tLk2kktmaw" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <!--<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>-->
+                    </div>
+                    </div>
+                </section>
+            </header>
+        </div>
+
+        
+  
+     
+        <!-- ======= LOGO CABEZERA ======= -->
+        <section id="cabeza" class="container-fluid">
+            <div> 
+                <center><img  src="{% static 'JPJp5\LALCEC-02.png' %}" alt="logo lalcec" title="logocabecera" width="30%"  id="logo" /></center>
+            </div>
+        </section>
+
+        <!-- ======= NAVBAR ======= -->
+        <div>
+            <nav id="barra" class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" href="#nosotros">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" href="#campPiel">CAMPAÑAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" href="{% url 'blog' %}">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" href="#team">PROFESIONALES</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'JPJp5\0carrusel.png' %}" class="d-block w-100" alt="corazon">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'JPJp5\1carrusel.png'%}" class="d-block w-100" alt="medicos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'JPJp5\2carrusel.png' %}" class="d-block w-100" alt="mas imags">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    <!-- ======= seccion NOSOTROS ======= -->
+    <section id="nosotros" class="nosotros">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <h2>LALCEC</h2>
+            <h3>Liga Argentina de Lucha Contra el Cáncer</h3>
+            <p>
+              Tiene como objetivo conseguir tratamiento para todos, 
+              alcanzar estilos de vida saludables, ofrecer servicios 
+              de detección precoz y sumar voluntades para concientizar 
+              a la población sobre la campaña de lucha contra el cáncer. 
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <center><img id="imagen" src="{% static 'JPJp5\nosotros.jpg' %}" alt="logo lalcec" width="70%" title="imagen"/></center>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- fin seccion NOSOTROS -->
+
+    <!-- ======= seccion campanias ======= -->
+    <section id="campPiel" class="campPiel">
+        <div class="container">
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <h2>CAMPAÑA CONTRA EL CÁNCER DE PIEL</h2>
+              <h3>¿Cuáles son los síntomas del cáncer de piel?</h3>
+              <p>Un cambio en la piel es el signo más común de cáncer de piel. Estos cambios pueden ser una lesión nueva que le salió en la piel, una llaga que no cicatriza o un cambio en un lunar. No todos los cánceres de piel se ven iguales.</p>
+              <h3>¿Cuáles son los factores de riesgo del cáncer de piel?</h3>
+              <p>Las personas con ciertos factores de riesgo tienen más probabilidad que otras de contraer cáncer de piel. Los factores de riesgo varían de acuerdo al tipo de cáncer de piel.</p>
+              <h3>¿Qué puedo hacer para reducir el riesgo de cáncer de piel?</h3>
+              <p>Es importante protegerse de la radiación ultravioleta (UV) durante todo el año, no solo durante el verano o cuando se está en la playa. Los CDC recomiendan métodos fáciles para protegerse de la radiación UV.</p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <img src="https://scontent.fres2-1.fna.fbcdn.net/v/t1.6435-9/46499133_1918988528397980_318934620609445888_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=bRqIy_l-I2sAX8RpkKf&_nc_ht=scontent.fres2-1.fna&oh=00_AT9F26RtjWrJOzcTtALN3c1GTSkErk1SccbPXYa-BUk2_w&oe=632D451B" alt="campana contra cancer de cuello de utero" title="cancer cuello de utero" />              
+            </div>
+          </div>
+          </div>
+  
+        </div>
+      </section>
+      
+      <section id="campMamas" class="campMamas">
+        <div class="container">
+  
+          <div class="row content">
+            <div>
+              <img src="https://scontent.fres2-1.fna.fbcdn.net/v/t1.6435-9/71011689_2103310726632425_9036887683598647296_n.png?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_ohc=_bkOj-NiTcoAX9tAZRh&_nc_ht=scontent.fres2-1.fna&oh=00_AT_Nvp67YvF4E6SispD7c7DfnqBYvRNBSwdOxJfWwgt_Jg&oe=632EBB81" alt="imagen campana" title="cancer de mamas" />
+            </div>
+            
+          </div>
+  
+        </div>
+      </section>
+
+      <section id="campPROS" class="campPROS">
+        <div class="container">
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <h2>CAMPAÑA CONTRA EL CÁNCER DE PRÓSTATA</h2>
+              <h3>El cáncer de próstata puede no provocar signos ni síntomas en sus primeros estadios.</h3>
+              <h3>El cáncer de próstata que está más avanzado puede causar signos y síntomas como:</h3>
+              <ul>
+                <li><i class="ri-check-double-line"></i> Problemas para orinar</li>
+                <li><i class="ri-check-double-line"></i> Disminución en la fuerza del flujo de la orina.</li>
+                <li><i class="ri-check-double-line"></i> Sangre en la orina.</li>
+                <li><i class="ri-check-double-line"></i> Sangre en el semen.</li>
+                <li><i class="ri-check-double-line"></i> Dolor de huesos.</li>
+                <li><i class="ri-check-double-line"></i> Pérdida de peso sin intentarlo.</li>
+                <li><i class="ri-check-double-line"></i> Pérdida de peso sin intentarlo.</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <img src="https://pbs.twimg.com/media/FU0g11KXoAI5RkN?format=jpg&name=small" alt="campana contra cancer de prostata" title="cancer cuello de prostata" />              
+            </div>
+          </div>
+  
+        </div>
+      </section>
+
+      <section id="campUTER" class="campUTER">
+        <div class="container">
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <h2>CAMPAÑA CONTRA EL CÁNCER DE CUELLO DE ÚTERO</h2>
+              <h3>¿Qué síntomas da el cáncer de cuello de útero?</h3>
+              <ul>
+                <li><i class="ri-check-double-line"></i> Manchas de sangre o sangrado leve entre o después de la menstruación.</li>
+                <li><i class="ri-check-double-line"></i> Sangrado menstrual que es más prolongado y abundante que lo habitual.</li>
+                <li><i class="ri-check-double-line"></i> Sangrado después del coito, el lavado genital o el examen pélvico.</li>
+                <li><i class="ri-check-double-line"></i> Mayor secreción vaginal.</li>
+                <li><i class="ri-check-double-line"></i> Dolor durante las relaciones sexuales.</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <img src="https://scontent.fres2-1.fna.fbcdn.net/v/t1.6435-9/69459079_2080709852225846_71606278874464256_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=Fk2hgrhu5MYAX90ROhQ&_nc_ht=scontent.fres2-1.fna&oh=00_AT8z6jM_pcynB6cVWTG4LeaTLsCKoKY1Apds-jnFZpqL7g&oe=632C94AB" alt="campana contra cancer de cuello de utero" title="cancer cuello de utero" />              
+            </div>
+          </div>
+  
+        </div>
+      </section>
+
+      <section id="campPULMON" class="campPULMON">
+        <div class="container">
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <h2>CAMPAÑA CONTRA EL CANCER DE PULMÓN</h2>
+              <h3>¿Qué síntomas da el cáncer de pulmón?</h3>
+              <ul>
+                <li><i class="ri-check-double-line"></i> Una tos que no desaparece o que empeora.</li>
+                <li><i class="ri-check-double-line"></i> Tos con sangre o esputo (saliva o flema) del color del metal oxidado.</li>
+                <li><i class="ri-check-double-line"></i> Dolor en el pecho que a menudo empeora cuando respira profundamente, tose o se ríe. Ronquera.</li>
+                <li><i class="ri-check-double-line"></i> Pérdida del apetito.</li>
+                <li><i class="ri-check-double-line"></i> Pérdida de peso inexplicable.</li>
+                <li><i class="ri-check-double-line"></i> Dificultad para respirar.</li>
+                <li><i class="ri-check-double-line"></i> Cansancio o debilidad.</li>
+                <li><i class="ri-check-double-line"></i> Infecciones como bronquitis y neumonía que no desaparecen o que siguen recurriendo.</li>
+                <li><i class="ri-check-double-line"></i> Nuevo silbido de pecho.</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <img src="https://meridiano55.com/wp-content/uploads/2019/05/FlyerSemanasGratuitas_Pulm%C3%B3n.jpg" alt="campana contra cancer de pulmon" title="cancer cuello de pulmon" />              
+            </div>
+          </div>
+  
+        </div>
+      </section>
+
+      <section id="habitossaludables" class="habitossaludables">
+        <div class="container">
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <h2>CAMPAÑA HÁBITOS SALUDABLES</h2>
+              <h3>Las recomendaciones de LALCEC para llevar a cabo una alimentación saludable y cultivar hábitos de autocuidado son las siguientes:</h3>
+              <ul>
+                <li><i class="ri-check-double-line"></i> Elegir el agua para mantenerse hidratado. Se recomienda tomar al menos 8 vasos al día. Evitar el consumo de bebidas azucaradas.</li>
+                <li><i class="ri-check-double-line"></i> El caso de los niños: si los padres consumen gran variedad de alimentos, frutas y verduras diariamente, los chicos se inclinarán a incorporarlos.</li>
+                <li><i class="ri-check-double-line"></i> Reducir el consumo de sal y de productos salados (caldos, panificados, snacks, fiambres, embutidos, productos de pastelería, enlatados).</li>
+                <li><i class="ri-check-double-line"></i> Priorizar la selección de alimentos frescos, aumentar el consumo de frutas y verduras de estación, de colores variados incluyendo al menos una porción en cada comida..</li>
+                <li><i class="ri-check-double-line"></i> Reducir o eliminar el consumo de alimentos procesados y ultraprocesados.</li>
+                <li><i class="ri-check-double-line"></i> Eliminar el tabaco, ya que al hacerlo se gana sustancialmente la expectativa de vida. Cualquier edad es buena para dejar de fumar y se goza un beneficio mayor al hacerlo a una edad temprana.</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <img src="https://scontent.fres2-1.fna.fbcdn.net/v/t1.6435-9/67494240_2064772097152955_8974533889561198592_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=GUW_0K6FP9wAX9W0nXi&_nc_ht=scontent.fres2-1.fna&oh=00_AT9Vep01m5vsxav7O3tX1gAqE3Ppd2VxiuOKNe7KdW_WqQ&oe=632D7EC9" alt="imagen habitos saludables" title="abitos saludables" />              
+            </div>
+          </div>
+  
+        </div>
+      </section>
+
+      <!-- fin seccion campanias -->
+
+
+
+            <!-- ======= SECCION PROFESIONALES ======= -->
+    <section id="team" class="team">
+        <div class="container">
+  
+          <div class="section-title">
+            <span>PROFESIONALES</span>
+            <h2 id="prof" class="prof">PROFESIONALES</h2>
+            <p>PROFESIONALES QUE ATIENDEN EN LALCEC SÁENZ PEÑA</p>
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-6">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{% static 'assets/img/team/walter acosta.jpg' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Walter Acosta </h4>
+                  <ul>
+                    <li>
+                        Consulta ginecológica y mamaria.
+                    </li>
+                    <li>
+                        PAP
+                    </li>
+                  </ul>
+                  <div class="social">
+                    <!-- <a href=""><i class="ri-twitter-fill"></i></a>-->
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2FLALCECHACO%2F&e=ATPj6mQPpt4S2V3kZEH_Qo2AjTWyKBYQUlK1wZPvHA0uS0qaxAhA6gzFEtF8x5adJerqWP7W2WhNYgu3&s=1"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Flalcecspchaco%3Ffbclid%3DIwAR23xECAH5hX5gUXXHR-68HimkAsrC4O67OHxj0UGEFLadKOSSssT1484Ws&h=AT2aEnFT8JAuG76VOSuZewK88AeoHCVoVRljIEMP1P6TlbmIDnHqErZywxYXl15cyFyf2paxNw5RjDnWUE3NV1F-M0tW97cDuPTb06zScz8t8NnqGu_YHuXzGzF0tLk2kktmaw"><i class="ri-instagram-fill"></i></a>
+                    <!--<a href=""> <i class="ri-linkedin-box-fill"></i> </a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{% static 'assets/img/team/luciana muchut.jpg' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Luciana Muchut </h4>
+                  <span>Lic.  Nutrición M.P 308</span>
+                  <ul>
+                    <li>
+                        Consulta nutricional 
+                    </li>
+                    <li>
+                        Asesoramiento nutricional en oncología
+                    </li>
+                  </ul>
+                  <div class="social">
+                    <!-- <a href=""><i class="ri-twitter-fill"></i></a>-->
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2FLALCECHACO%2F&e=ATPj6mQPpt4S2V3kZEH_Qo2AjTWyKBYQUlK1wZPvHA0uS0qaxAhA6gzFEtF8x5adJerqWP7W2WhNYgu3&s=1"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Flalcecspchaco%3Ffbclid%3DIwAR23xECAH5hX5gUXXHR-68HimkAsrC4O67OHxj0UGEFLadKOSSssT1484Ws&h=AT2aEnFT8JAuG76VOSuZewK88AeoHCVoVRljIEMP1P6TlbmIDnHqErZywxYXl15cyFyf2paxNw5RjDnWUE3NV1F-M0tW97cDuPTb06zScz8t8NnqGu_YHuXzGzF0tLk2kktmaw"><i class="ri-instagram-fill"></i></a>
+                    <!--<a href=""> <i class="ri-linkedin-box-fill"></i> </a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6 mt-4">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{% static 'JPJp5\liston.png' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4> Licenciada y Especialista en Obstetricia </h4>
+                  <span></span>
+                  <ul>
+                    <li>
+                        Control Prenatal 
+                    </li>
+                    <li>
+                        Consulta obstétrica en general
+                    </li>
+                    <li>
+                        Consejería en anticoncepción 
+                    </li>
+                    <li>
+                        PAP 
+                    </li>
+                    <li>
+                        Test de HPV 
+                    </li>
+                  </ul>
+                  <div class="social">
+                    <!-- <a href=""><i class="ri-twitter-fill"></i></a>-->
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2FLALCECHACO%2F&e=ATPj6mQPpt4S2V3kZEH_Qo2AjTWyKBYQUlK1wZPvHA0uS0qaxAhA6gzFEtF8x5adJerqWP7W2WhNYgu3&s=1"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Flalcecspchaco%3Ffbclid%3DIwAR23xECAH5hX5gUXXHR-68HimkAsrC4O67OHxj0UGEFLadKOSSssT1484Ws&h=AT2aEnFT8JAuG76VOSuZewK88AeoHCVoVRljIEMP1P6TlbmIDnHqErZywxYXl15cyFyf2paxNw5RjDnWUE3NV1F-M0tW97cDuPTb06zScz8t8NnqGu_YHuXzGzF0tLk2kktmaw"><i class="ri-instagram-fill"></i></a>
+                    <!--<a href=""> <i class="ri-linkedin-box-fill"></i> </a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6 mt-4">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{% static 'assets/img/team/gabriela saccani.jpg' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dra. Gabriela Saccani</h4>
+                  <span>Médica Clínica</span>
+                  <ul>
+                    <li>
+                        Atención o evaluación de pacientes con enfermedades crónicas no transmisibles 
+                    </li>
+                    <li>
+                        Diabetes 
+                    </li>
+                    <li>
+                        Hipertensión arterial 
+                    </li>
+                    <li>
+                        Insuficiencia cardiaca 
+                    </li>
+                    <li>
+                        Tiroides 
+                    </li>
+                  </ul>
+                  <div class="social">
+                    <!-- <a href=""><i class="ri-twitter-fill"></i></a>-->
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2FLALCECHACO%2F&e=ATPj6mQPpt4S2V3kZEH_Qo2AjTWyKBYQUlK1wZPvHA0uS0qaxAhA6gzFEtF8x5adJerqWP7W2WhNYgu3&s=1"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Flalcecspchaco%3Ffbclid%3DIwAR23xECAH5hX5gUXXHR-68HimkAsrC4O67OHxj0UGEFLadKOSSssT1484Ws&h=AT2aEnFT8JAuG76VOSuZewK88AeoHCVoVRljIEMP1P6TlbmIDnHqErZywxYXl15cyFyf2paxNw5RjDnWUE3NV1F-M0tW97cDuPTb06zScz8t8NnqGu_YHuXzGzF0tLk2kktmaw"><i class="ri-instagram-fill"></i></a>
+                    <!--<a href=""> <i class="ri-linkedin-box-fill"></i> </a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="{% static 'assets/img/team/rocio manzino.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Rocío Manzino</h4>
+                    <span> Lic.  Nutrición M.P 029</span>
+                    <ul>
+                      <li>
+                          Consulta nutricional 
+                      </li>
+                    </ul>
+                    <div class="social">
+                      <!-- <a href=""><i class="ri-twitter-fill"></i></a>-->
+                      <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2FLALCECHACO%2F&e=ATPj6mQPpt4S2V3kZEH_Qo2AjTWyKBYQUlK1wZPvHA0uS0qaxAhA6gzFEtF8x5adJerqWP7W2WhNYgu3&s=1"><i class="ri-facebook-fill"></i></a>
+                      <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Flalcecspchaco%3Ffbclid%3DIwAR23xECAH5hX5gUXXHR-68HimkAsrC4O67OHxj0UGEFLadKOSSssT1484Ws&h=AT2aEnFT8JAuG76VOSuZewK88AeoHCVoVRljIEMP1P6TlbmIDnHqErZywxYXl15cyFyf2paxNw5RjDnWUE3NV1F-M0tW97cDuPTb06zScz8t8NnqGu_YHuXzGzF0tLk2kktmaw"><i class="ri-instagram-fill"></i></a>
+                      <!--<a href=""> <i class="ri-linkedin-box-fill"></i> </a>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- FIN SECCION PROFECIONALES -->
+
+      
+
+        <div class="footer">
+        
+        </div>
+
+  
+</div>
+
+ <!-- ======= Footer ======= -->
+  <section class="footer" id="left">
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-2 col-md-6"></div>
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-info">
+                <img src="https://scontent.fres2-1.fna.fbcdn.net/v/t1.6435-9/86638850_1223988254464495_571770699555799040_n.png?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=7R8db_0l7V8AX_yD-RA&_nc_ht=scontent.fres2-1.fna&oh=00_AT_SD_H9gjJkm95crpGbfOU0aLqWSAwb7EfkfyVpZwBwKA&oe=632D7E3C" alt="informatorio logo" width="20%">
+                <h3>INFORMATORIO</h3>
+                <p>Arturo Ilia 1055, Resistencia, Chaco </p>
+                <div class="social-links mt-3">
+                  <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
+                  <a href="#" class="https://www.facebook.com/informatorio"><i class="bx bxl-facebook"></i></a>
+                  <a href="https://instagram.com/informatorio?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
+                  <!--<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="integrantes">
+                  <h2 class="titulo">Integrantes</h2>
+                  <div class="links">
+                      <ul>
+                          <li><a href="" target="_blank">Gonzalez Walter Marcelo (Dev)</a></li>
+                          <li><a href="https://www.linkedin.com/in/olga-vanesa-ferreyra/" >Ferreyra Olga Vanesa (Dev) </a></li>
+                          <li><a href="http://www.linkedin.com/in/agustin-ojeda-b670a229/" >Ojeda Agustin (Dev)</a></li>
+                          <li><a href="igna_xd@hotmail.com.ar" >Piccoli Ignacio (Dev)</a></li>
+                          <li><a href="https://www.linkedin.com/in/carolina-huell-b9a36b22a/" >Huell Maria Carolina (Dev) </a></li>
+                          <li><a href="" >Roberto (Dev) </a></li>
+                          <li><a href="" >Julian (Dev) </a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6"></div>
+  </section>
+
+  <!-- End Footer -->    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
+
