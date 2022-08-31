@@ -73,18 +73,8 @@ WSGI_APPLICATION = 'proyectofinal.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+# configuracion de base de datos borrada por walter en acuerdo con Ignacio
 
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'proyecto_final',
-        'USER':'postgres',
-        'PASSWORD':'2527Loco',
-        'HOST':'127.0.0.1',
-        'PORT':'5432',
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
