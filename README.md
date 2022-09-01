@@ -54,8 +54,7 @@
 </br>
 </br></br>
 
-<FONT COLOR="green"<em><u><b><H3><p align="center">FUNCIONALIDADES</em></u></b><H/3>
-</FONT>
+<em><u><b><H3><p align="center">FUNCIONALIDADES</H3></em></u></b>
   </p>
 </li>
 </p>
