@@ -17,7 +17,8 @@ def index(request):
 def blog(request):
     return render(request,"blog/blog.html",{})
 
-
-
 def noticias(request):
     return render(request,"blog/noticias.html",{})
+
+def post2(request):
+    return render(request,'blog/post2.html',{})

@@ -25,4 +25,16 @@ class Post(models.Model):
     fecha = models.DateField(auto_now_add=True)
     categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True)
     comentario = models.ForeignKey(Comentario, on_delete=models.SET_NULL, null=True)
+    
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.title
 
