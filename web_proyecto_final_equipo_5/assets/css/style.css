@@ -476,8 +476,22 @@ section {
 }
 
 
+/*--------------------------------------------------------------
+# Usuario
+--------------------------------------------------------------*/
+#Ingresocont {
+  background-color: #f1f3f4;
+  margin-top: 10px;
+}
 
+#contra {
+  margin-top: 10px;
+}
 
+#ingresar {
+  background-color: #fb7304;
+  margin-top: 10px;
+}
 
 
 
