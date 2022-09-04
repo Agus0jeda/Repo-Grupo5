@@ -1,0 +1,19 @@
+html, body {
+  
+    height: 100%;
+    width: 100%;
+  }
+
+.cabeza {
+  display: block;
+  width: 150px;
+  margin: 100px auto;
+  padding: 15px;
+  text-align: center;
+  border: 29px;
+
+  }
+
+.car{
+    width: 80%;
+}
