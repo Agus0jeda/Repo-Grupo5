@@ -87,43 +87,45 @@
         </div>
         <!-- ======= FIN NAVBAR ======= -->
 
-        <!-- ======= CREAR POST ======= -->
+
+          <!-- ======= CREAR POST ======= -->
 
         <div class="container">
-            <div class="row">
-              <div class="col-4">
-                
-              </div>
-              <div id="Ingresocont" class="card col col-lg-4">
-                <section class="container" >
-                  <form method="POST" class="post-form">
-                    <div id="crep" >
-                        <h3> CREAR POST</h3>
-                    </div>
+          <div class="row">
 
-                    <div class="ingreso">
-                      <label for="exampleUsuario" class="form-label">Titulo</label>
-                      <input type="text" name="titulo" maxlength="100" required="" id="user">
-                    </div>
-                    <div class="ingreso">
-                      <label id="contra" for="textoDeNoticia" class="form-label">Texto</label>
-                      <p><label for="id_texto"></label> <textarea name="texto" cols="40" rows="10" maxlength="5000" required="" id="id_texto"></textarea></p>
-                    </div>
-                    <div id="imagen">
-                        <label id="titima" for="textoDeNoticia" class="form-label">Imagen</label>
-                        <p><label for="id_imagen" ></label> <input type="file" name="imagen" accept="image/*" required="" id="id_imagen"></p>
-                    </div>
-                    <button id="post" type="creator" class="btn btn-primary">Crear Post</button>
-                  </form>
-                </section>
-              </div>
-              <div class="col-4">
-                
-              </div>
+            <div class="row justify-content-center">
+              <div id="Ingresocont" class="col-xl-4 col-md-4 col-sm-4">
+                  <section class="container" >
+                    <form method="POST" class="post-form">
+                      <div id="crep" >
+                          <h3> CREAR POST</h3>
+                      </div>
+                      <div class="ingreso">
+                        <label for="exampleTitulo" class="form-label">Titulo</label>
+                        <input type="text" name="titulo" maxlength="100" required="" id="titulo">
+                      </div>
+                      <div class="texto" id="ingreso">
+                        <label id="contra" for="textoDeNoticia" class="form-label">Texto</label>
+                        <div class="ingresotext">
+                          <textarea name="texto" rows="4" cols="40" placeholder="Escriba algo"></textarea>
+                        </div>
+                        
+                      </div>
+                      <div id="imagen" class="mx-sm-3 mb-2">
+                          <label id="titima" for="textoDeNoticia" class="form-label">Imagen</label>
+                          <p><label for="id_imagen" ></label> <input type="file" name="imagen" accept="image/*" required="" id="id_imagen"></p>
+                      </div>
+                      <button id="post" type="creator" class="btn btn-primary">Crear Post</button>
+                    </form>
+                  </section>
+                </div>
             </div>
+          
+           
           </div>
-  
-          <!-- ======= FIN CREAR POST ======= -->
+        </div>
+
+        <!-- ======= FIN CREAR POST ======= -->
 
 
 
