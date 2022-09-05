@@ -511,6 +511,23 @@ section {
   margin-top: 10px;
 }
 
+#titulo {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+#id_imagen {
+  width: 80%;
+  size: 80%;
+}
+
+ .texarea #id_texto {
+  width: 1000px;
+  background-color: #03d1fe;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
